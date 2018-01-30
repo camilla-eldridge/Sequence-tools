@@ -1,16 +1,11 @@
-Extract any sequence with known positions
+Extract any sequence with known positions<br /><br />
 
-USAGE: sequence.fasta positions.txt > output.fasta
+ python splice.py  test.fasta  pos.txt  > output.fasta
 
-e.g
-python splice.py test.fasta pos.txt > out.fasta 
-
-*Note sequences must be in fasta format, see pos.txt for position file format 
+*Note sequences must be in fasta format, see pos.txt for position file format <br /><br />
 
 Examples of use:
 - To get coding exons from an orf
 - To get a domain from a protein sequence
 - To get nucleotide sequence for a protein domain:
-  Change positions in pos.txt:
-  Codon start=(aa position x 3)-2
-  Codon stop=aa stop  
+  Change positions in pos.txt: Codon start=(aa position x 3)-2, Codon stop=aa stop  
