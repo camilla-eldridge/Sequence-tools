@@ -24,7 +24,7 @@ Removes identical sequences (with identical headers) <br /> <br /> <br />
 	extract_exonerate_output.py
 Separates exonerate output into gff, orf and cds <br /> <br /> <br /> 
 
-	highest_score_exonerate.py
+	exonerate_highest_score.py
 Gets highest scoring sequence alignment from exonerate output (when you don't want to use bestn) <br /> <br /> <br />
 
 
