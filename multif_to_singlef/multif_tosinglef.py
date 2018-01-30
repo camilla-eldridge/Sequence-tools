@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import sys
 
 multif=sys.argv[1]
@@ -14,6 +12,3 @@ for j, line in enumerate(g):
     f = open(header + "_" + str(j) + ".fasta",'w')
     f.write(">" + header + "\n" +  seq)
     f.close()
-
-
-#enumerate gives unique number of each sequence in case of identical ids..
