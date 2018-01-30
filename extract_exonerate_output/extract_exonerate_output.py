@@ -1,9 +1,5 @@
-#!/usr/bin/env python
-######### works for multiple exonerate output in same file ###########
-
 import sys
 
-#identifier=sys.argv[1]
 exonerate_output=sys.argv[1]
 gene_id=sys.argv[2]
 
