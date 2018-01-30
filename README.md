@@ -1,9 +1,9 @@
 					Sequence-tools
 
-Some useful sequence tools written in python 2.7
+Some useful sequence tools written in python 2.7:
 
 
-	splice.py
+	 splice.py
 To get any sequence based on positions
 
 
