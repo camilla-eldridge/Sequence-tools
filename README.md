@@ -1,4 +1,4 @@
-					Sequence-tools
+Sequence-tools
 
 Some useful sequence tools written in python 2.7:
 
