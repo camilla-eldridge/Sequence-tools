@@ -1,6 +1,6 @@
 exonerate_highest_score.py
 
-Script to get the highest scoring alignment from protein2gneome model in exonerate
+Script to get the highest scoring alignment from protein2genome model in exonerate
 from a multifasta file when you dont want to use bestn 1:
 
 Process:
