@@ -1,65 +1,30 @@
-Sequence-tools
-
-Some useful sequence tools written in python 2.7:
-
-
+Some useful sequence tools written in python 2.7:<br /><br />
+															
 	 splice.py
-To get any sequence based on positions
-
-
-
-
+To get any sequence based on positions <br /> <br /> <br /> 
 
 	longest_orf.py
-To find the longest orf from a set of frames and identify presence of in frame stop codons
-
-
-
-
+To find the longest orf from a set of frames and identify presence of in frame stop codons <br /> <br /> <br />
 
 	get_seq_go.py
-Get sequence from a multifasta file based on id
-
-
-
-
+Get sequence from a multifasta file based on id <br /> <br /> <br /> 
 
 	reverse_complement.py
-Reverse complements a sequence
-
-
-
-
+Reverse complements a sequence <br /> <br /> <br /> 
 
 	phd_to_fasta.py
-Gets fasta sequence from phd file
-
-
-
-
+Gets fasta sequence from phd file <br /> <br /> <br /> 
 
 	mulif_to_singlef.py
-Separates multi fasta file to single fasta files
-
-
-
-
+Separates multi fasta file to single fasta files <br /> <br /> <br />
 
 	remove_duplicate_fasta.py
-Removes identical sequences (with identical headers)
-
-
-
-
+Removes identical sequences (with identical headers) <br /> <br /> <br /> 
 
 	extract_exonerate_output.py
-Separates exonerate output into gff, orf and cds
-
-
-
-
+Separates exonerate output into gff, orf and cds <br /> <br /> <br /> 
 
 	highest_score_exonerate.py
-Gets highest scoring sequence alignment from exonerate output (when you don't want to use bestn)
+Gets highest scoring sequence alignment from exonerate output (when you don't want to use bestn) <br /> <br /> <br />
 
 
