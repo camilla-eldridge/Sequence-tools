@@ -1,6 +1,6 @@
 Extract any sequence with known positions<br /><br />
 
- python splice.py  test.fasta  pos.txt  > output.fasta
+    python splice.py  test.fasta  pos.txt  > output.fasta
 
 *Note sequences must be in fasta format, see pos.txt for position file format <br /><br />
 
