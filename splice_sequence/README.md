@@ -1,4 +1,4 @@
-Extract any sequence with known positions<br /><br />
+Extract any sequence with known positions<br />
 
     python splice.py  test.fasta  pos.txt  > output.fasta
 
