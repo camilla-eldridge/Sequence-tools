@@ -1,4 +1,4 @@
-Some useful sequence tools written in python 2.7:<br /><br />
+Some useful sequence tools written in python 2.7:<br /> <br /> <br /> <br /> 
 															
 	 splice.py
 To get any sequence based on positions <br /> <br /> <br /> 
