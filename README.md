@@ -23,20 +23,12 @@
 	- Gets fasta sequence from phd file
 
 
-	hmm_to_fasta.py
-	- Get fasta sequence from hmm output
-
-
 	mulif_to_singlef.py
 	- Separates multi fasta file to single fasta files
 
 
 	remove_duplicate_fasta.py
 	- removes identical sequences (with identical headers)
-
-
-	gff_to_cds.py
-	- gets cds sequence from gff positions
 
 
 	extract_exonerate_output.py
