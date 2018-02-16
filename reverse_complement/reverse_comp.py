@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 input_seq=sys.argv[1]
