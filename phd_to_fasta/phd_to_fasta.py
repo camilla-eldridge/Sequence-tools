@@ -1,4 +1,6 @@
 
+#!/usr/bin/env python
+
 import sys
 p=sys.argv[1]
 ID=sys.argv[2]
