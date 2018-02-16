@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 transeq_output=sys.argv[1]
