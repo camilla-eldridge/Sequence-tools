@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 multif=sys.argv[1]
