@@ -1,4 +1,7 @@
+#!/usr/bin/env python
+
 import sys
+
 ids=sys.argv[1]
 genome_file=sys.argv[2]
 
