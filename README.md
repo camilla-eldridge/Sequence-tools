@@ -28,3 +28,6 @@ Separates exonerate output into gff, orf and cds <br /> <br /> <br />
 Gets highest scoring sequence alignment from exonerate output (when you don't want to use bestn) <br /> <br /> <br />
 
 
+	nhmmer_or_hmmsearch_to_fasta.py
+
+Gets fasta sequence for protein hits from hmmsearch or hit regions(dna) from nhmmer 
