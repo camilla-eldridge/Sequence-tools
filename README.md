@@ -1,4 +1,8 @@
 Some useful sequence tools written in python 2.7:<br /> <br /> <br /> <br /> 
+
+
+	mauve_snps_to_cds.py
+Identifies which SNPS exported from mauve are in coding regions <br /> <br /> <br /> 
 															
 	 splice.py
 To get any sequence based on positions <br /> <br /> <br /> 
