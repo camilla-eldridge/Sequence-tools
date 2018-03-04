@@ -1,8 +1,7 @@
 Some useful sequence tools written in python 2.7:<br /> <br /> <br /> <br /> 
 
 	gbk_to_proteome.py
-Gets all protein sequences from a gbk file
-
+Gets all protein sequences from a gbk file  <br /> <br /> <br /> 
 
 	mauve_snps_to_cds.py
 Identifies which SNPS exported from mauve are in coding regions <br /> <br /> <br /> 
