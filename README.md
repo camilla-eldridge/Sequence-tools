@@ -37,3 +37,8 @@ Gets highest scoring sequence alignment from exonerate output (when you don't wa
 	nhmmer_or_hmmsearch_to_fasta.py
 
 Gets fasta sequence for protein hits from hmmsearch or hit regions(dna) from nhmmer 
+
+
+	unique_headers.py
+	
+Removes characters ":,.()" from fasta file headers, truncates header after first white space and adds a unique id.
