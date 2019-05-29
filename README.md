@@ -45,4 +45,8 @@ Removes characters ":,.()" from fasta file headers, truncates header after first
 	
 Converts single fasta file to .ali format for modeller <br /> <br /> <br /> 
 
+	add_fasta_headers.py 
+	
+Add fasta headers to sequence separated by newline  <br /> <br /> <br /> 
+
 
