@@ -33,12 +33,15 @@ Separates exonerate output into gff, orf and cds <br /> <br /> <br />
 	exonerate_highest_score.py
 Gets highest scoring sequence alignment from exonerate output (when you don't want to use bestn) <br /> <br /> <br />
 
-
 	nhmmer_or_hmmsearch_to_fasta.py
 
-Gets fasta sequence for protein hits from hmmsearch or hit regions(dna) from nhmmer 
-
+Gets fasta sequence for protein hits from hmmsearch or hit regions(dna) from nhmmer <br /> <br /> <br /> 
 
 	unique_headers.py
 	
-Removes characters ":,.()" from fasta file headers, truncates header after first white space and adds a unique id.
+Removes characters ":,.()" from fasta file headers, truncates header after first white space and adds a unique id.<br /> <br /> <br /> 
+
+	fasta2ali.py
+	
+Converts single fasta file to .ali format for modeller <br /> <br /> <br /> 
+
