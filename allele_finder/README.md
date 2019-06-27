@@ -16,14 +16,13 @@ allele_finder.py  <br /> <br /> <br />
  
 Output: <br /> <br /> <br /> 
 
-test_clusters.fasta  
+         test_clusters.fasta  
 
 Sequence file sorted into indentical cluster groups, n in cluster shown in header.  <br /> <br /> <br /> 
 
-test_cluster_info.txt  
+         test_cluster_info.txt  
+Table of cluster members, n in cluster and cluster representative id    <br /> <br /> <br /> 
 
-table of cluster members, n in cluster and cluster representative id    <br /> <br /> <br /> 
+         test_cluster_members.csv  
 
-test_cluster_members.csv  
-
-table of cluster ids per individual   <br /> <br /> <br /> 
+Table of cluster ids per individual   <br /> <br /> <br /> 
