@@ -2,7 +2,7 @@ allele_finder.py  <br /> <br /> <br />
 
 - Given multi-fasta file, sorts sequences into identical groups (can be used to cluster any strings in fasta format by 100% id)
 
-- Returns tables of counts and cluster ids for plotting and further analysis. 
+- Returns tables of counts and cluster ids for plotting and further analysis. <br /> <br /> <br /> 
 
 
 
