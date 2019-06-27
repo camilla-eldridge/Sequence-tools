@@ -9,7 +9,8 @@ Given multi-fasta file, sorts sequences into putative alleles and returns tables
     Example: allele_finder.py test.fasta test
 
 
-
+ <br /> <br /> <br /> 
+ 
 Output: <br /> <br /> <br /> 
 
 test_clusters.fasta  
