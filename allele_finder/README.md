@@ -5,10 +5,11 @@ allele_finder.py  <br /> <br /> <br />
 - Returns tables of counts and cluster ids for plotting and further analysis. 
 
 
-    USAGE: allele_finder.py mf_file id
+
+         USAGE: allele_finder.py mf_file id
 
 
-    Example: allele_finder.py test.fasta test
+         Example: allele_finder.py test.fasta test
 
 
  <br /> <br /> <br /> 
