@@ -50,3 +50,10 @@ Converts single fasta file to .ali format for modeller <br /> <br /> <br />
 Add fasta headers to sequence separated by newline  <br /> <br /> <br /> 
 
 
+	allele_finder.py
+	
+Sorts fasta input into allele clusters and returns tables of allele counts
+	
+
+
+
