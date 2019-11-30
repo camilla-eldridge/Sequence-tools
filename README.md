@@ -1,5 +1,8 @@
 Some useful sequence tools written in python 2.7:<br /> <br /> <br /> <br /> 
 
+	heditor.py
+Edits Genbank headers to include species name and Genbank accession numbers only  <br /> <br /> <br />
+
 	gbk_to_proteome.py
 Gets all protein sequences from a gbk file  <br /> <br /> <br /> 
 
