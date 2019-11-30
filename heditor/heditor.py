@@ -1,8 +1,5 @@
 import sys
 
-## script to replace headers with id and species names from genbank downloaded aligment mf file 
-
-
 alignment=sys.argv[1]
 output=sys.argv[2]
 
@@ -17,9 +14,8 @@ with open(alignment, "r") as f:
     for line in g:
         line=line.split(" ")
         
-        if "x" in line: # for hybrid entries - havent tested with x in id name yet 
+        if "x" in line: # for hybrid entries - havent tested with x in id name yet.. 
             taxid=line[1:6]
-            print taxid
         else:
             taxid=line[1:3]
             
