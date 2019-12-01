@@ -1,62 +1,48 @@
 Some useful sequence tools written in python 2.7:<br /> <br /> <br /> <br /> 
 
 	heditor.py
-Edits Genbank headers to include species name and Genbank accession numbers only  <br /> <br /> <br />
+
+Edits Genbank headers to include species name and accession number only.<br /> <br /> <br />
+
+	find_seq_overlap.py
+
+Gets position of overlapping sequences on a given target sequence.<br /> <br /> <br />
 
 	gbk_to_proteome.py
-Gets all protein sequences from a gbk file  <br /> <br /> <br /> 
+Gets all protein sequences from a gbk file.  <br /> <br /> <br /> 
 
 	mauve_snps_to_cds.py
-Identifies which SNPS exported from mauve are in coding regions <br /> <br /> <br /> 
+Identifies which SNPS exported from mauve are in coding regions. <br /> <br /> <br /> 
 															
 	 splice.py
-To get any sequence based on positions <br /> <br /> <br /> 
+To get sequence based on positions. <br /> <br /> <br /> 
 
 	longest_orf.py
-To find the longest orf from a set of frames and identify presence of in frame stop codons <br /> <br /> <br />
+To find the longest orf from all frames and identify presence of in-frame stop codons. <br /> <br /> <br />
 
 	get_seq_go.py
-Get sequence from a multifasta file based on id <br /> <br /> <br /> 
+Get sequence from a multifasta file based on id. <br /> <br /> <br /> 
 
 	reverse_complement.py
-Reverse complements a sequence <br /> <br /> <br /> 
+Reverse complements a sequence. <br /> <br /> <br /> 
 
 	phd_to_fasta.py
-Gets fasta sequence from phd file <br /> <br /> <br /> 
+Gets fasta sequence from phd file. <br /> <br /> <br /> 
 
 	mulif_to_singlef.py
-Separates multi fasta file to single fasta files <br /> <br /> <br />
+Separates multi fasta file to single fasta files. <br /> <br /> <br />
 
 	remove_duplicate_fasta.py
-Removes identical sequences (with identical headers) <br /> <br /> <br /> 
+Removes identical sequences (with identical headers). <br /> <br /> <br /> 
 
 	extract_exonerate_output.py
-Separates exonerate output into gff, orf and cds <br /> <br /> <br /> 
+Separates exonerate output into gff, orf and cds. <br /> <br /> <br /> 
 
 	exonerate_highest_score.py
-Gets highest scoring sequence alignment from exonerate output (when you don't want to use bestn) <br /> <br /> <br />
+Gets highest scoring sequence alignment from exonerate output (when you don't want to use bestn). <br /> <br /> <br />
 
 	nhmmer_or_hmmsearch_to_fasta.py
+Gets fasta sequence for protein hits from hmmsearch or hit regions(dna) from nhmmer.  <br /> <br /> <br />
 
-Gets fasta sequence for protein hits from hmmsearch or hit regions(dna) from nhmmer <br /> <br /> <br /> 
-
-	unique_headers.py
-	
-Removes characters ":,.()" from fasta file headers, truncates header after first white space and adds a unique id.<br /> <br /> <br /> 
-
-	fasta2ali.py
-	
-Converts single fasta file to .ali format for modeller <br /> <br /> <br /> 
-
-	add_fasta_headers.py 
-	
-Add fasta headers to sequence separated by newline  <br /> <br /> <br /> 
-
-
-	allele_finder.py
-	
-Sorts fasta input into allele clusters and returns tables of allele counts
-	
-
-
-
+	unique_headers.py	
+Removes characters ":,.()" from fasta file headers, truncates header after first white space and adds a unique id.
