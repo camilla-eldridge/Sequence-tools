@@ -1,5 +1,9 @@
 Some useful sequence tools written in python 2.7:<br /> <br /> <br /> <br /> 
 
+	replace_heads.py
+
+Given a txt file of new headers, replaces existing headers in an mf file.<br /> <br /> <br />
+
 	heditor.py
 
 Edits Genbank headers to include species name and accession number only.<br /> <br /> <br />
