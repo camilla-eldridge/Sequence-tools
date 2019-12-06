@@ -24,8 +24,10 @@ with open(alignment, "r") as f:
         
         Final_seq = Final_seq + ">" + "_".join(taxid) + "_" + str(iD) + "\n" + "".join(seq) + "\n"
         
-Final_seq = Final_seq.replace(".", "").replace(",", "").replace("(","").replace(")","").replace(";", "").replace(":", "")   
+Final_seq = Final_seq.replace(",", "").replace("(","").replace(")","").replace(";", "").replace(":", "")   
   
-      
+ 
+#.replace(".", "")  
+            
 out = open(output + ".fasta", "w")    
 out.write("".join(Final_seq))
