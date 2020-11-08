@@ -11,9 +11,9 @@ saved=""
 for j, line in enumerate(g):
     t=line.split()
     k="".join(line).split("\n")
-    header="".join(k[0]).rstrip().split(" ")[0].replace(".", "").replace(",", "").replace("(","").replace(")","").replace(";", "").replace(":", "")
+    header="".join(k[0]).rstrip().split(" ")[0].replace(".", "").replace(",", "").replace("(","").replace(")","").replace(";", "").replace(":", "").replace("|", "").replace("*", "")
     seq="".join(k[1:]).rstrip()
-    saved=saved + ">" + header + "id" + str(j) + "\n" + seq + "\n"
+    saved=saved + ">" + header + "_id" + str(j) + "\n" + seq + "\n"
 out.write(saved)
 
 
