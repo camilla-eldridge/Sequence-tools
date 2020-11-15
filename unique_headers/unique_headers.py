@@ -11,11 +11,7 @@ saved=""
 for j, line in enumerate(g):
     t=line.split()
     k="".join(line).split("\n")
-    header="".join(k[0]).rstrip().split(" ")[0].replace(".", "").replace(",", "").replace("(","").replace(")","").replace(";", "").replace(":", "")
+    header="".join(k[0]).rstrip().split(" ")[0].replace(".", "").replace(",", "").replace("(","").replace(")","").replace(";", "").replace(":", "").replace("%", "")
     seq="".join(k[1:]).rstrip()
     saved=saved + ">" + header + "id" + str(j) + "\n" + seq + "\n"
 out.write(saved)
-
-
-#replaces unwanted characters and gives unique id to each sequence
-#puts in "id" before number to stop confusion with accession ns
