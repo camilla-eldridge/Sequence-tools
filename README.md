@@ -1,4 +1,4 @@
-Some useful sequence tools written in python 2.7:<br /> <br /> <br /> <br /> 
+Some useful sequence tools written in Python 2.7:<br /> <br /> <br /> <br /> 
 
 	replace_heads.py
 
