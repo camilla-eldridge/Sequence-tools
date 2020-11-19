@@ -53,4 +53,11 @@ Gets highest scoring sequence alignment from exonerate output (when you don't wa
 Gets fasta sequence for protein hits from hmmsearch or hit regions(dna) from nhmmer.  <br /> <br /> <br />
 
 	unique_headers.py	
-Removes characters ":,.()%*" from fasta file headers, truncates header after first white space and adds a unique id.
+Removes characters ":,.()%*" from fasta file headers, truncates header after first white space and adds a unique id. <br /> <br /> <br />
+
+	unique_ids.py
+Removes existing headers in a fasta file and replaces them with unique ids for each sequence ( >1, >2, >3 ...) 
+
+
+
+
