@@ -56,8 +56,11 @@ Gets fasta sequence for protein hits from hmmsearch or hit regions(dna) from nhm
 Removes characters ":,.()%*" from fasta file headers, truncates header after first white space and adds a unique id. <br /> <br /> <br />
 
 	unique_ids.py
-Removes existing headers in a fasta file and replaces them with unique ids for each sequence ( >1, >2, >3 ...) 
+Removes existing headers in a fasta file and replaces them with unique ids for each sequence ( >1, >2, >3 ...) <br /> <br /> <br />
 
+	split_fasta_ntimes.py
+
+Splits multi-fasta file into smaller multi-fasta files by N sequences <br /> <br /> <br />
 
 
 
