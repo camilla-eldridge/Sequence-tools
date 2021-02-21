@@ -62,5 +62,9 @@ Removes existing headers in a fasta file and replaces them with unique ids for e
 
 Splits multi-fasta file into smaller multi-fasta files by N sequences <br /> <br /> <br />
 
+	get_by_size.py
+	
+Extracts all sequences from an mf file that are >= a desired length. <br /> <br /> <br />
+
 
 
