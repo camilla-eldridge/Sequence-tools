@@ -19,8 +19,8 @@ Gets position of overlapping sequences on a given target sequence.<br /> <br /> 
 	gbk_to_proteome.py
 Gets all protein sequences from a gbk file.  <br /> <br /> <br /> 
 
-	mauve_snps_to_cds.py
-Identifies which SNPS exported from mauve are in coding regions. <br /> <br /> <br /> 
+	mauve_snps.py
+Identifies which SNPS exported from mauve are in annotated regions based on reference gbk. <br /> <br /> <br /> 
 															
 	 splice.py
 To get sequence based on positions. <br /> <br /> <br /> 
