@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+@author: camilla eldridge
+"""
+
 import sys
 
 multif=sys.argv[1]
