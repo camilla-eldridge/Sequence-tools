@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+
+"""
+@author: camilla eldridge
+"""
+
 import sys
 
 mf=sys.argv[1]
