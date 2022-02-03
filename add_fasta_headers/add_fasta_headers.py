@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+"""
+@author: camilla eldridge
+"""
 
 import sys
 
