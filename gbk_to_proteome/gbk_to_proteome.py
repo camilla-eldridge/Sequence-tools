@@ -1,4 +1,10 @@
 #!/usr/env python
+
+"""
+@author: camilla eldridge
+"""
+
+
 import sys
 
 gbk=sys.argv[1]
