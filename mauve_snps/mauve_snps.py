@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+
+"""
+@author: camilla eldridge
+"""
 
 import sys
 
@@ -76,7 +81,7 @@ for node_a in node_snps:
       
 final_snps=filter(None, coding_snps)            
 
-print "\n".join(final_snps)
+print("\n".join(final_snps))
 
 
 
