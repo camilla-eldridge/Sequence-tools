@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+@author: camilla eldridge
+"""
+
 import sys
 
 input_seq=sys.argv[1]
@@ -12,4 +16,4 @@ reverse=a[::-1].lower()
 
 reverse_complement=reverse.replace("a", "T").replace("t","A").replace("c","G").replace("g","C").upper()
 
-print header + "\n" + reverse_complement
+print(header + "\n" + reverse_complement)
