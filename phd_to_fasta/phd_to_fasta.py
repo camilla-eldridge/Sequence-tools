@@ -1,7 +1,12 @@
 
 #!/usr/bin/env python
 
+"""
+@author: camilla eldridge
+"""
+
 import sys
+
 p=sys.argv[1]
 ID=sys.argv[2]
 
@@ -12,4 +17,4 @@ def phd2fasta(PHD_file):
     SEQ="".join(splitphd.split()[0::3])
     return ">" + ID + "\n" + SEQ
 
-print phd2fasta(pp)
+print(phd2fasta(pp))
