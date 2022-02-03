@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+
+"""
+@author: camilla eldridge
+"""
+
 import sys
 
 hmm_output=sys.argv[1]
@@ -49,6 +54,6 @@ for line in a:
                         hit_sequences.append(">" +  header + "\n" + no_header[int(str(P1[0])):int(str(P2[0]))] + "\n")                   
                             
 result="".join(hit_sequences)
-print result
+print(result)
    
   
