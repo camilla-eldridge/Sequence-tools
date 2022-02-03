@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+
 # -*- coding: utf-8 -*-
+
 """
 Created on Sun Jul 18 18:03:40 2021
-@author: ce9
+@author: camilla eldridge
 """
 
 import sys
