@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+@author: camilla eldridge
+"""
+
 import sys
 
 transeq_output=sys.argv[1]
@@ -27,13 +31,13 @@ result=longest_orf_final(get_lengths(f1), f1)
 Final="".join(result.split("\n")[1:])
 
 if Final.endswith("*"):
-	print ">" + seq_id + "\n" + Final.replace("*","")
+	print(">" + seq_id + "\n" + Final.replace("*",""))
 elif "*" in Final:
 	x=open(seq_id + "_" + "in_frame_stop_codon.txt", "w")
 	seq_nohead=result.split("\n")[1:]
 	stop_pos=str(seq_nohead).index("*")
 	x.write("In frame stop codon at:" + " " + str(stop_pos))
         x.close()
-	print ">" + seq_id + "\n" + Final
+	print(">" + seq_id + "\n" + Final)
 else:
-	print ">" + seq_id + "\n" + Final
+	print(">" + seq_id + "\n" + Final)
