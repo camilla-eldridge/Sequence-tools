@@ -1,3 +1,11 @@
+
+#!/usr/bin/env python
+
+"""
+@author: camilla eldridge
+"""
+
+
 import sys
 
 alignment=sys.argv[1]
@@ -26,8 +34,6 @@ with open(alignment, "r") as f:
         
 Final_seq = Final_seq.replace(",", "").replace("(","").replace(")","").replace(";", "").replace(":", "")   
   
- 
-#.replace(".", "")  
             
 out = open(output + ".fasta", "w")    
 out.write("".join(Final_seq))
