@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-import sys
+"""
+@author: camilla eldridge
+"""
 
+import sys
 
 multif=sys.argv[1]
 splitn=sys.argv[2]
-
-#multif="test3.fasta"
-#splitn=2
 
 
 fn = open(multif,"r").read()
@@ -18,11 +18,11 @@ splitn=int(splitn)
 
 x=[g[i:i+splitn] for i in range(len(g))[::splitn]] # split list by n fasta sequences 
 
-for j, line in enumerate(x,1): # for each 
+for j, line in enumerate(x,1):
     c=[k.split("\n") for k in line]  # must split by newline incase of headers with spaces etc...
     new=[">" + "\n".join(p) for p in c] # add removed fasta > symbol to each line (for each new file)
     f = open(str(j) + ".fasta",'w') # Write out files, named by iterator (0,1,2,3.fasta)
-    f.write("".join(new)) # write and close file
+    f.write("".join(new)) 
     f.close()    
     
 
