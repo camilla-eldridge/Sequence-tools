@@ -16,5 +16,5 @@ with open(gbk, "r") as f:
              final=final + (">" + "".join(head) + "\n" + z.replace(" ", "") + "\n") ### save each header and protein sequence ##
 
 final=final.replace("\n\n", "\n") ## remove any new lines ##
-print final                
+print(final)                
 
