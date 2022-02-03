@@ -15,7 +15,7 @@ for i in cdsoutput:
 highest_score_index=score.index(max(score))
 lowest_score_index=score.index(min(score))
 
-print ">" + cdsoutput[highest_score_index]
+print(">" + cdsoutput[highest_score_index])
 
 
 
