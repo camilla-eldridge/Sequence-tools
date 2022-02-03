@@ -10,7 +10,7 @@ imp=open(infile, "r").read()
 imp=filter(None, imp.split("\n"))
 
 for i, value in enumerate(imp, 1):
-    print ">" + str(i) + "_" + str(ID) + "\n" + value 
+    print(">" + str(i) + "_" + str(ID) + "\n" + value) 
 
 
 
