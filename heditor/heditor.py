@@ -5,12 +5,10 @@
 @author: camilla eldridge
 """
 
-
 import sys
 
 alignment=sys.argv[1]
 output=sys.argv[2]
-
 
 
 Final_seq=""
