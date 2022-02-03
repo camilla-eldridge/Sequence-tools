@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+
+"""
+@author: camilla eldridge
+"""
+
 import sys
 
 seq_fasta=sys.argv[1]
@@ -19,4 +24,4 @@ for line in positions:
     pos2=each_cds[1]
     cds=cds + str(seq[int(pos1)-1:int(pos2)])
 
-print head + "\n" + (cds.replace("\n",""))
+print(head + "\n" + (cds.replace("\n","")))
