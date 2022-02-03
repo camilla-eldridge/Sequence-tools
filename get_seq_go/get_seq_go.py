@@ -19,4 +19,4 @@ with open(genome_file) as genome:
 	    else:
 		pass
 
-print seq.rstrip()
+print(seq.rstrip())
