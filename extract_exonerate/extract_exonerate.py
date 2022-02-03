@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+
+"""
+@author: camilla eldridge
+"""
+
+
 import sys
 
 exonerate_output=sys.argv[1]
