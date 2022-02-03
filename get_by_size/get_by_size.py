@@ -1,17 +1,19 @@
 #!/usr/bin/python env
 
+"""
+@author: camilla eldridge
+"""
+
 import sys
 
 multif=sys.argv[1]
-splitsize=sys.argv[2]
+splitz=sys.argv[2]
 
-fn = open(multif,"r").read()
-g=fn.rstrip().split(">")[1:] # split mf fasta file by fasta header >
+with open(multif, "r") as mf_file:
+    g = mf_file.read().rstrip().split(">")[1:]
+    for i in g:
+        if len("".join(filter(None, i.split("\n")[1:]))) >= int(splitz):
+            print(">" + i)
+        else:
+            pass
 
-splitz=int(splitsize)
-
-for i in g:
-    seq="".join(filter(None, i.split("\n")[1:]))
-    if len(seq) >= splitz:
-        out=">" + i
-        print(out)
