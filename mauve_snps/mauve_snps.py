@@ -7,7 +7,7 @@
 import sys
 
 first_gbk=sys.argv[1]
-mauve_SNP_output=sys.argv[20]
+mauve_SNP_output=sys.argv[2]
 
 
 gbk_1=[] 
