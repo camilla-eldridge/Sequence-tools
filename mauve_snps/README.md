@@ -5,4 +5,4 @@ mauve_to_snps.py locates the SNP range when given a gbk annotation file and the 
 - Outputs a list of snps in annotated regions.
 
 
-		USAGE: mauve_snps.py Exported_SNPS.txt  first_gbk_file > snps.txt  
+		USAGE: mauve_to_snps.py Exported_SNPS.txt  first_gbk_file > snps.txt  
