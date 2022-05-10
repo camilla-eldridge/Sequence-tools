@@ -11,9 +11,6 @@ alignment=sys.argv[1]
 output=sys.argv[2]
 
 
-#alignment="test2.fasta"
-#output="test2out-new"
-
 final_seq=""
 new_list=""
 
