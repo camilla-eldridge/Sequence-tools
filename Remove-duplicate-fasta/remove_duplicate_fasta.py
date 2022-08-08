@@ -17,9 +17,9 @@ def remove_complete_duplicates(fasta_lines):
     outputlist=[] 
     setofuniqsequence=set()
     for sequence in fasta_lines: 
-	 if sequence not in setofuniqsequence: 
-           outputlist.append(sequence)
-           setofuniqsequence.add(sequence)
+        if sequence not in setofuniqsequence: 
+            outputlist.append(sequence) 
+            setofuniqsequence.add(sequence)
     return outputlist
 
 result=remove_complete_duplicates(fasta_lines) 
