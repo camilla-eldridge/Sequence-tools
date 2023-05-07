@@ -66,5 +66,9 @@ Splits multi-fasta file into smaller multi-fasta files by N sequences <br /> <br
 	
 Extracts all sequences from an mf file that are >= a desired length. <br /> <br /> <br />
 
+	compare_txt.py
+
+Compares two text files (e.g can use to compare accession ids) and prints any ids that are not in both text files.
+
 
 
