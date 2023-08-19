@@ -6,7 +6,6 @@
 """
 
 import sys
-
 mauve_SNP_output=sys.argv[1]
 first_gbk=sys.argv[2]
 
@@ -19,8 +18,6 @@ first_gbk=sys.argv[2]
     SNP_Pattern	Ref_Contig	Ref_PosInContig	Ref_PosGenomeWide	Assembly_Contig	Assembly_PosInContig	Assembly_PosGenomeWide
     ac	ac	NODE_14	1746	1062759	NODE_16	1746	1060305
     3. Genbank file generated from prokka 1.12 in 2017 '''
-
-
 
 
 ''' get node ids and snp pos for sequence 1 only'''
@@ -43,7 +40,6 @@ for node in contig_pos:
     snp_node_ids.add(node.split(",")[0])
             
 
-
 ''' Get gbk entries for snp nodes '''
 
 gbk_snp_entries=[]
@@ -62,10 +58,7 @@ with open(first_gbk, "r") as gbk:
         for node_id in snp_node_ids:
             if str(node_id) == str(at2):
                 gbk_snp_entries.append(entry)
-                
-                
-            
-                
+                                
 
 ''' Function to find annotated regions for each contig'''
 
@@ -76,8 +69,6 @@ def get_annotations(x):
     
     contig_cds.append(NODEid)
     y = x.split("ORIGIN")[0][1:]
-
-
     
     for Q in y.split("\n"):
         to_app=""
@@ -105,16 +96,15 @@ def get_annotations(x):
     
 
 
-    
 ''' Get annotated entry in each contig '''
 
 all_snp_conts=[]
 for C in gbk_snp_entries:
     all_snp_conts.append(get_annotations(C))
     
-    
 
-''' some nodes dont have annotation, contaminants? Print out, remove, replace annotation features to get just pos'''
+''' some nodes dont have annotation, contaminants? Print out
+remove, replace annotation features to get just pos'''
 
 all_snp_conts_replaced=[]
 
@@ -128,14 +118,13 @@ for E in all_snp_conts:
         
     else:        
         
-        ''' reformat the string, theres probs a better way...''' 
-        # replace annotation info with node id (we dont need it)
+        ''' reformat the string, theres probs a better way...
+           replace annotation info with node id (we dont need it) ''' 
         
         E=str(E).replace("CDS ", nod_id).replace("tRNA ", nod_id).replace("rRNA ", nod_id).replace("'", "").replace(",", "").replace("[", "").replace("]", "").replace("product=", "").replace('"', "")
         
-        # remove additional node id info at start
+        ''' remove additional node id info at start and append to final list ''' 
         all_snp_conts_replaced.append([r for r in E.split()[1:]])
-    
     
 
 
@@ -157,14 +146,13 @@ for i in contig_pos:
     w.append(nod_pos)
     
     
-    
 ''' get all snp positions for each node '''
 
 snp_node_positions = list(filter(None, [k.split() for k in " ".join(w).split("split_me")]))
 
 
-
-''' input list of snp positions per node, and list of gbk coding regions '''
+''' input list of snp positions per node, and list of gbk coding regions
+iterates through nested lists of snps and annotated regions per node'''
 
 snps_in_annot = {}
 
@@ -186,17 +174,17 @@ for snp_val in snp_node_positions:
                     if int(range_values[0]) <= int_value <= int(range_values[1]):
                         snps_in_annot[node].append({'product': product, 'value': value, 'range': range_values})
                         
-                        # break the loop here to prevent duplicates
+                        '''  break the loop here to prevent duplicates ''' 
                         break
                         
         else:
             pass
-        
-        
-# Remove entries with empty key or values
+
+
+''' Remove entries with empty key or values 
+(these are nodes where snp falls ouside annotated range)'''
 
 snps_in_annot = {k: v for k, v in snps_in_annot.items() if k and v}
-
 
 for node, entries in snps_in_annot.items():
     print(f"Node: {node}")
@@ -210,8 +198,7 @@ for node, entries in snps_in_annot.items():
         print("-----")
 
        
-            
-
+        
 ''' Notes:
     
     ***sometimes (but not always...)  rRNA entries are like this:
