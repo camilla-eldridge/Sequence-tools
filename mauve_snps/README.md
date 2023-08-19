@@ -8,3 +8,17 @@ mauve_to_snps.py locates if a SNP is within the range of annotated features when
 
 
 Note that this won't be foolproof for mis-annotations!....always check the sequence..
+
+Output looks like:
+
+	NODE_1: SNP here but no annotations found!
+	Node: NODE_3
+	Product: hypothetical_protein
+	Value: 17
+	Range: 13, 210
+	-----
+	Node: NODE_15
+	Product: Small_toxic_polypeptide_LdrD
+	Value: 596
+	Range: 596, 723
+	-----
