@@ -3,4 +3,4 @@
 
 Usage:  
 
-                python unique_headers.py input_fasta_file  renamed_headers.fasta
+                python3 unique_headers.py input.fasta  output.fasta
