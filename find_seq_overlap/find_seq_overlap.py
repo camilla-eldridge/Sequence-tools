@@ -6,43 +6,42 @@
 
 import sys
 import re
+from typing import List
 
-seq=sys.argv[1]
-epi=sys.argv[2]
-out=sys.argv[3]
+def read_file(file_path: str) -> str:
+    with open(file_path, "r") as file:
+        return file.read()
 
+def find_epitopes_in_sequence(sequence: str, epitopes: List[str]) -> str:
+    a = "".join(sequence).split("\n")[1]
+    pos = ""
 
-sequence=open(seq, "r").read()
-positions=open(out, "w")
-
-a="".join(sequence).split("\n")[1] 
-
-
-pos=""
-
-with open(epi) as epitopes:
-    epitopes = epitopes.readlines()
-    for line in epitopes:
+    for i in epitopes:
+        matches = re.finditer(r'(?=(%s))' % re.escape(i), a)
+        pos += str([('%01d %01d %s' % (m.start(1), m.end(1), m.group(1))) for m in matches]) + "\n"
     
-        """ Remove epitope headers """
-        e=("".join(epitopes).split("\n")[1::2])
-        
-        for i in e:
-            
-                """ Find epitope in sequence (overlapping or not) """
-                matches=re.finditer(r'(?=(%s))' % re.escape(i),a) 
-                
-                """Get start:stop positions for epitopes and corresponding sequence"""
-                pos=pos  +  str([('%01d %01d %s' % (m.start(1), m.end(1), m.group(1))) for m in matches]) + "\n"   
-        
-        break
+    return pos
 
-k=pos.replace("[]", "").replace("[", "").replace("]", "").replace("'", "")
+def process_epitopes_file(epi: str) -> List[str]:
+    with open(epi, "r") as epitopes:
+        lines = epitopes.readlines()
+        e = "".join(lines).split("\n")[1::2]
+        return e
 
-positions.write("".join(k))
+def main(seq: str, epi: str, out: str) -> None:
+    sequence = read_file(seq)
+    with open(out, "w") as positions:
+        epitopes = process_epitopes_file(epi)
+        pos = find_epitopes_in_sequence(sequence, epitopes)
 
+        k = pos.replace("[]", "").replace("[", "").replace("]", "").replace("'", "")
+        positions.write("".join(k))
 
-
-
-
-
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        print("Usage: python script.py sequence_file epitope_file output_file")
+        sys.exit(1)
+    seq = sys.argv[1]
+    epi = sys.argv[2]
+    out = sys.argv[3]
+    main(seq, epi, out)
