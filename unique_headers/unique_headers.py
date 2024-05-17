@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+
+"""
+@author: camilla eldridge
+"""
+
 import sys
 
 def main(multif: str, outf: str) -> None:
