@@ -3,7 +3,7 @@
 """
 @author: Camilla Eldridge
 @description: A script to find the longest open reading frame (ORF) from a translated nucleotide sequence.
-@usage: python longest_orf.py <transeq_output> <seq_id>
+@usage: python longest_orf.py <transeq_output> <seq_id> > longest_orf.faa
 """
 
 import sys
@@ -30,7 +30,6 @@ def main() -> None:
     if len(sys.argv) != 3:
         print("Usage: python longest_orf.py <transeq_output> <seq_id>")
         sys.exit(1)
-
 
 transeq_output: str = sys.argv[1]
 seq_id: str = sys.argv[2]
