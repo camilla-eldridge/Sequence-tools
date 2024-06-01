@@ -10,18 +10,18 @@ import sys
 from typing import List
 
 ''' splits each translated frame by stop codons'''
-def get_lengths(split_frames: List[str]) -> List[int]:
-    lengths: List[int] = []
+def get_n_substrings(split_frames: List[str]) -> List[int]:
+    counts: List[int] = []
     for seq in split_frames:
         each_frame: List[str] = seq.split("\n")
         wo_header: str = "".join(each_frame[1:]).rstrip()
         d: List[str] = wo_header.split("*")
-        lengths.append(len(d))
-    return lengths
+        counts.append(len(d))
+    return counts
 
-''' finds the transaltion with the minimum no of splits '''
-def longest_orf_final(length_of_split: List[int], split_frames: List[str]) -> str:
-    min_split: int = length_of_split.index(min(length_of_split))
+''' finds the translation with the minimum no of splits '''
+def longest_orf_final(split_size: List[int], split_frames: List[str]) -> str:
+    min_split: int = split_size.index(min(split_size))
     Longest_orf: str = ">" + split_frames[min_split]
     return Longest_orf
 
@@ -42,7 +42,7 @@ except IOError:
 
 ''' split to remove headers, get the longest orf'''
 f1: List[str] = "".join(frames).split(">")[1:]
-result: str = longest_orf_final(get_lengths(f1), f1)
+result: str = longest_orf_final(get_n_substrings(f1), f1)
 Final: str = "".join(result.split("\n")[1:])
 
 ''' If there is an in-frame stop codon, print the postion in a newfile'''
