@@ -39,7 +39,7 @@ def main(seq: str, epi: str, out: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("Usage: python script.py sequence_file epitope_file output_file")
+        print("Usage: python find_seq_overlap.py sequence_file epitope_file output_file")
         sys.exit(1)
     seq = sys.argv[1]
     epi = sys.argv[2]
