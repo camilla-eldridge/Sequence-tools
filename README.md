@@ -2,7 +2,7 @@
 
 
 
-Some useful sequence tools written in Python - Now updated for Python3 : <br /> <br /> <br /> <br /> 
+This is a repository of sequence tools written in Python: <br /> <br /> <br /> <br /> 
 
 	replace_heads.py
 
@@ -68,4 +68,5 @@ Extracts all sequences from an mf file that are >= a desired length. <br /> <br 
 Compares two text files (e.g can use to compare accession ids) and prints any ids that are not in both text files.
 
 
-
+## Future use 
+This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0), this means you can share and adapt this code but you must give the original author credit and indicate any modifications made.
