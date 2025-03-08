@@ -1,73 +1,41 @@
-# Sequence tools 
+# 🧬✨ Sequence Tools
+
+Welcome to **Sequence Tools** – a repository of tools for wrangling sequence data in Python:
+
+## 🚀 Tools & Descriptions
+
+### 🏷️ Header Management
+- **🔄 `replace_heads.py`** – Swap out old headers in an MF file with new ones from a text file.
+- **📝 `heditor.py`** – Cleans up GenBank headers, leaving only the species name and accession number.
+- **🎭 `unique_headers.py`** – Strips special characters from headers, truncates after the first space, and adds a unique ID.
+- **🆔 `unique_ids.py`** – Replaces existing headers in a FASTA file with unique numeric IDs (`>1`, `>2`, etc.).
+
+### 🔍 Sequence Search & Extraction
+- **🧩 `find_seq_overlap.py`** – Identifies overlapping sequences in a target sequence.
+- **🔎 `get_seq_go.py`** – Fetches sequences from a multi-FASTA file based on IDs.
+- **📜 `splice.py`** – Extracts sequence regions based on position input.
+- **🛠️ `gbk_to_proteome.py`** – Extracts all protein sequences from a GenBank file.
+- **🔬 `phd_to_fasta.py`** – Converts PHD files to FASTA format.
+- **⚡ `nhmmer_or_hmmsearch_to_fasta.py`** – Extracts FASTA sequences from HMMER search results.
+
+### 🔢 ORF & Codon Analysis
+- **🧬 `longest_orf.py`** – Finds the longest ORF in all frames and detects in-frame stop codons.
+- **🔄 `reverse_complement.py`** – Generates the reverse complement of a sequence.
+
+### 📊 File Splitting & Filtering
+- **📂 `mulif_to_singlef.py`** – Converts a multi-FASTA file into individual FASTA files.
+- **📏 `get_by_size.py`** – Extracts sequences from an MF file that meet a length threshold.
+- **✂️ `split_fasta_ntimes.py`** – Splits a multi-FASTA file into smaller multi-FASTA chunks of N sequences.
+- **🚮 `remove_duplicate_fasta.py`** – Removes duplicate sequences (including headers).
+
+### 🤖 Exonerate Analysis
+- **📑 `extract_exonerate_output.py`** – Extracts GFF, ORF, and CDS from Exonerate output.
+- **🏆 `exonerate_highest_score.py`** – Retrieves the highest-scoring alignment from Exonerate output (when you don't want to use `bestn`).
+
+### 📜 Text & ID Comparisons
+- **📄 `compare_txt.py`** – Compares two text files (e.g., accession IDs) and reports differences.
+
+## 📜 License
+This work is licensed under a [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You’re free to share and adapt the code, but credit the original author and indicate any modifications. 🎉
 
 
-
-This is a repository of sequence tools written in Python: <br /> <br /> <br /> <br /> 
-
-	replace_heads.py
-
-Given a txt file of new headers, replaces existing headers in an mf file.<br /> <br /> <br />
-
-	heditor.py
-
-Edits Genbank headers to include species name and accession number only.<br /> <br /> <br />
-
-	find_seq_overlap.py
-
-Gets position of overlapping sequences on a given target sequence.<br /> <br /> <br />
-
-	gbk_to_proteome.py
-Gets all protein sequences from a gbk file.  <br /> <br /> <br /> 
-										
-	 splice.py
-To get sequence based on positions. <br /> <br /> <br /> 
-
-	longest_orf.py
-To find the longest orf from all frames and identify presence of in-frame stop codons. <br /> <br /> <br />
-
-	get_seq_go.py
-Get sequence from a multifasta file based on id. <br /> <br /> <br /> 
-
-	reverse_complement.py
-Reverse complements a sequence. <br /> <br /> <br /> 
-
-	phd_to_fasta.py
-Gets fasta sequence from phd file. <br /> <br /> <br /> 
-
-	mulif_to_singlef.py
-Separates multi fasta file to single fasta files. <br /> <br /> <br />
-
-	remove_duplicate_fasta.py
-Removes identical sequences (with identical headers). <br /> <br /> <br /> 
-
-	extract_exonerate_output.py
-Separates exonerate output into gff, orf and cds. <br /> <br /> <br /> 
-
-	exonerate_highest_score.py
-Gets highest scoring sequence alignment from exonerate output (when you don't want to use bestn). <br /> <br /> <br />
-
-	nhmmer_or_hmmsearch_to_fasta.py
-Gets fasta sequence for protein hits from hmmsearch or hit regions(dna) from nhmmer.  <br /> <br /> <br />
-
-	unique_headers.py	
-Removes characters ":,.()%*" from fasta file headers, truncates header after first white space and adds a unique id. <br /> <br /> <br />
-
-	unique_ids.py
-Removes existing headers in a fasta file and replaces them with unique ids for each sequence ( >1, >2, >3 ...) <br /> <br /> <br />
-
-	split_fasta_ntimes.py
-
-Splits multi-fasta file into smaller multi-fasta files by N sequences <br /> <br /> <br />
-
-	get_by_size.py
-	
-Extracts all sequences from an mf file that are >= a desired length. <br /> <br /> <br />
-
-	compare_txt.py
-
-Compares two text files (e.g can use to compare accession ids) and prints any ids that are not in both text files. <br /> <br /> <br /> <br /> 
-
-
-
-## Future use
-This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0), this means you can share and adapt this code but you must give the original author credit and indicate any modifications made.
