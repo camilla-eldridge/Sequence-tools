@@ -65,8 +65,9 @@ Extracts all sequences from an mf file that are >= a desired length. <br /> <br 
 
 	compare_txt.py
 
-Compares two text files (e.g can use to compare accession ids) and prints any ids that are not in both text files.
+Compares two text files (e.g can use to compare accession ids) and prints any ids that are not in both text files. <br /> <br /> <br /> <br /> 
 
 
-## Future use 
+
+## Future use
 This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0), this means you can share and adapt this code but you must give the original author credit and indicate any modifications made.
